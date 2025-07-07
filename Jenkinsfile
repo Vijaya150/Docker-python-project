@@ -32,7 +32,7 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                sh "docker run -it -d -p 80:8080 --name flaskapp $IMAGE_NAME"
+                sh "docker run -d -p 5000:8080 --name flaskapp $IMAGE_NAME"
             }
         }
     }
