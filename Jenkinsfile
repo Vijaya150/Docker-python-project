@@ -1,5 +1,5 @@
 pipeline {
-agent { 'label=testlabel' }
+agent { label 'testlabel' }
  
   environment {
         IMAGE_NAME = 'vijayadarshini/flaskapp'
